@@ -7,7 +7,7 @@
  h2 {
       margin-bottom: 20px;
     }
-.g1 ,.g2,.g3{
+#g1 ,#g2,#g3{
 	display:flex;
 	gap:40px;
 	
@@ -50,9 +50,9 @@ input:checked+.slider{
 input:checked+ .slider::before{
 	transform:translateX(50px);
 }
-.g1 span:last-child,
-.g2 span:last-child,
-.g3 span:last-child {
+#g1 span:last-child,
+#g2 span:last-child,
+#g3 span:last-child {
   font-size: 18px;
   text-transform: capitalize;
 }
