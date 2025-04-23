@@ -1,1 +1,56 @@
 /*  your css code here. If applicable */
+ body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+ h2 {
+      margin-bottom: 20px;
+    }
+.g1 ,.g2,.g3{
+	display:flex;
+	gap:40px;
+	
+	margin-top:10px;
+}
+.switch{
+	position:relative;
+	width:90px;
+	height:40px;
+	display:inline-block;
+}
+.slider{
+	position:absolute;
+	cursor:pointer;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color:#ccc;
+	transition:.4s;
+	border-radius:34px;
+}
+.switch input{
+	display:none;
+}
+.slider::before{
+	content:"";
+	position:absolute;
+	width:35px;
+	height:35px;
+	left:4px;
+	bottom:2.8px;
+	background-color:#fff;
+	border-radius:50%;
+	transition:.4s;
+}
+input:checked+.slider{
+	background-color:blue;
+}
+input:checked+ .slider::before{
+	transform:translateX(50px);
+}
+ 
+
+
+   
