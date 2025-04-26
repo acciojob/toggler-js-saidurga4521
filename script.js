@@ -6,7 +6,7 @@ toggles.forEach(toggle=>{
 		if(toggle.checked){
 			selected.push(toggle);
 			if(selected.length>2){
-				const oldest=selected[1];
+				const oldest=selected.shift();
 				oldest.checked=false;
 			}
 		}else{
